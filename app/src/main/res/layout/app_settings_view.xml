@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/travel_mode" />
+
+    <RadioGroup
+        android:id="@+id/travel_mode_radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_driving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/driving_button" />
+
+        <RadioButton
+            android:id="@+id/radio_walking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/walking_button" />
+
+        <RadioButton
+            android:id="@+id/radio_biking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/biking_button" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/travel_mode_radio_group"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/distance_unit" />
+
+    <RadioGroup
+        android:id="@+id/distance_unit_radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance_unit_default" />
+
+        <RadioButton
+            android:id="@+id/radio_kilometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kilometer" />
+
+        <RadioButton
+            android:id="@+id/radio_mile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mile" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/enableLandscape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/distance_unit_radio_group"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/enable_landscape" />
+
+    <Switch
+        android:id="@+id/allowHighways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/enableLandscape"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/allow_highways" />
+
+    <Switch
+        android:id="@+id/allowTolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/allowHighways"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/allow_tolls" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/setup_macroSavebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/action_save"
+            bootstrap:bb_icon_right="fa-save"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_size="small"
+            bootstrap:bb_type="success" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/setup_macroCancelbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/action_cancel"
+            bootstrap:bb_icon_right="fa-times-circle"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_size="small"
+            bootstrap:bb_type="danger" />
+    </LinearLayout>
+
+</RelativeLayout>

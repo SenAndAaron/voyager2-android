@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Voyager</string>
+    <string name="empty_view_message">There is no created route. Please add one by clicking the bottom-right button.</string>
+    <string name="empty_waypoints_message">No stops have been added yet. Please add one by clicking the bottom-right button.</string>
+    <string name="end_point_same_as_start">Same as Start</string>
+    <string name="created_at">Created at %s</string>
+    <string name="launching_app_msg">Launching Voyager…</string>
+    <string name="fetching_route_info">Fetching route information…</string>
+    <string name="route_calculation_cancelled">Route calculation cancelled</string>
+    <string name="menu">Menu</string>
+    <string name="start_colon">Start:</string>
+    <string name="start_address">Start Address</string>
+    <string name="end_colon">End:</string>
+    <string name="end_address">End Address</string>
+    <string name="route_name">Route Name</string>
+    <string name="number_of_stops">Number of stops:</string>
+    <string name="add_new_stop">Add a new Stop</string>
+    <string name="warning">Warning</string>
+    <string name="optimal_route">Optimal Route</string>
+    <string name="calculated_at">Calculated at %s</string>
+    <string name="not_calculated_yet">Not calculated yet</string>
+    <string name="manually_reordered_at">Manually re-ordered at %s</string>
+    <string name="nickname">Nickname</string>
+    <string name="show_on_map">Show on Map</string>
+
+    <string name="confirm_delete_route_title">Delete this route?</string>
+    <string name="confirm_delete_route_content">This action will permanently delete this route. Do you wish to continue?</string>
+    <string name="confirm_delete_stop_title">Delete this stop?</string>
+    <string name="confirm_delete_stop_content">This action will permanently delete this stop. Do you wish to continue?</string>
+
+    <!--View title...-->
+    <string name="title_activity_create_route">Create New Route</string>
+    <string name="title_activity_edit_route">Edit Route</string>
+
+    <!--Setting View...-->
+    <string name="travel_mode">Travel Mode</string>
+    <string name="driving_button">Driving</string>
+    <string name="walking_button">Walking</string>
+    <string name="biking_button">Biking</string>
+    <string name="distance_unit">Distance Unit</string>
+    <string name="distance_unit_default">Default</string>
+    <string name="kilometer">Kilometer</string>
+    <string name="mile">Mile</string>
+    <string name="enable_landscape">Enable Landscape </string>
+    <string name="allow_highways">Allow Highways </string>
+    <string name="allow_tolls">Allow Tolls </string>
+
+    <!--Toast message...-->
+    <string name="app_settings_saved">App settings have been saved!</string>
+    <string name="route_saved">Route has been saved!</string>
+
+    <!--Dialog boxes...-->
+    <string name="exit_confirm">Exit Voyager?</string>
+
+    <!--Button text...-->
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_add">Add</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="action_calculate_optimal">Calculate Optimal</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_drag_reorder">Drag to reorder</string>
+    <string name="action_back_to_main">Back to Main View</string>
+
+    <string name="tab_details">Details</string>
+    <string name="tab_stops">Stops</string>
+    <string name="tab_map">Map</string>
+
+    <string name="error_no_internet_connection">No internet connectivity</string>
+    <string name="error_insufficient_stops">Insufficient stops to optimize route</string>
+    <string name="error_route_calculate_fail">Unable to calculate route, please try again</string>
+    <string name="error_location_services_unavailable">Location services not available</string>
+    <string name="error_network_lost">Network lost. Please re-connect.</string>
+    <string name="error_disconnected">Disconnected. Please re-connect.</string>
+    <string name="error_start_point_invalid">Start point must be a valid address. Please use auto-complete to add addresses.</string>
+    <string name="error_place_autocomplete_invalid">Please use auto-complete to add addresses.</string>
+
+    <string name="hint_end_point">(leave empty for round trip)</string>
+    <string name="hint_optional">(optional)</string>
+</resources>

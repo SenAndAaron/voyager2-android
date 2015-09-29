@@ -1,0 +1,237 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/idHolder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"/>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            card_view:cardBackgroundColor="#E6E6E6"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/route_details_card">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+            <TextView
+                    android:id="@+id/route_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="14sp"/>
+
+            <View
+                    android:id="@+id/route_name_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/route_name"
+                    android:background="@android:color/darker_gray"/>
+
+            <TextView
+                    android:id="@+id/start_address_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/route_name_divider"
+                    android:paddingEnd="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/start_colon"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/start_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/start_address_label"
+                    android:layout_toEndOf="@+id/start_address_label"
+                    android:layout_toRightOf="@+id/start_address_label"
+                    android:textSize="18sp"/>
+
+            <TextView
+                    android:id="@+id/end_address_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/start_address"
+                    android:text="@string/end_colon"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/end_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/start_address"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignStart="@+id/start_address"
+                    android:layout_below="@+id/start_address"
+                    android:layout_toEndOf="@+id/end_address_label"
+                    android:layout_toRightOf="@+id/end_address_label"
+                    android:textSize="18sp"/>
+
+            <TextView
+                    android:id="@+id/num_stops_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/end_address"
+                    android:paddingEnd="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/number_of_stops"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/num_stops"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/end_address"
+                    android:layout_toEndOf="@+id/num_stops_label"
+                    android:layout_toRightOf="@+id/num_stops_label"
+                    android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            card_view:cardBackgroundColor="#E6E6E6"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/optimal_route_card"
+            android:layout_below="@+id/route_details_card">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+            <TextView
+                    android:id="@+id/optimal_route_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="14sp"
+                    android:text="@string/optimal_route"/>
+
+            <View
+                    android:id="@+id/optimal_route_top_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/optimal_route_label"
+                    android:background="@android:color/darker_gray"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/optimal_route_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/optimal_route_top_divider"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/optimal_route_bottom_divider"/>
+
+            <View
+                    android:id="@+id/optimal_route_bottom_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_above="@+id/last_optimal_calculated_date"
+                    android:background="@android:color/darker_gray"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/last_optimal_calculated_date"
+                    android:textSize="14sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/manual_reorder_date"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/manual_reorder_date"
+                    android:textSize="14sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_above="@+id/calculate_optimal_btn"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/calculate_optimal_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="10dp"
+                    android:text="@string/action_calculate_optimal"
+                    bootstrap:bb_icon_right="fa-tachometer"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="default"
+                    bootstrap:bb_type="primary"
+                    android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

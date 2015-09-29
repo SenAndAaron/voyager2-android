@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_paragraph"><![CDATA[
+            <p>&bull; Developer: Sensis and AZ
+            </p>
+
+            <p>&bull; Shoot us an email for questions/feedbacks
+            </p>
+
+            <p>&bull; Please rate the app if you like it. This app is completely free (no even ads).
+                We would really appreciate if you may take this into account when rating :)
+            </p>
+
+            <p>&bull; Icon: http://icons8.com
+            </p>
+    ]]></string>
+</resources>

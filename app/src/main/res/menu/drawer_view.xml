@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_routes"
+            android:checked="true"
+            android:icon="@drawable/ic_list"
+            android:title="Routes" />
+        <!--<item-->
+            <!--android:id="@+id/nav_app_settings"-->
+            <!--android:icon="@drawable/ic_app_settings"-->
+            <!--android:title="App Settings" />-->
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:title="About" />
+    </group>
+</menu>

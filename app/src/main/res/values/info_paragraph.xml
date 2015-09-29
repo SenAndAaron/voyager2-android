@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info_paragraph"><![CDATA[
+            <p>&bull; NOTE: The app is developed for learning purpose. It is an open source project published on GitHub and has not
+                been tested for production usage. If you are looking for a more stable/usable version, please check out the app
+                 "Voyager: Route Planner".
+            </p>
+
+            <p>&bull; Voyager 2 calculates the optimal (shortest) route for visiting all entered stop points.
+            </p>
+            <p>&bull; Optimal route calculation is NOT done based on data from the Google directions service.
+                It simply uses the direct distance between two stops (by the Haversine algorithm) and no traffic condition
+                is taken into account.
+            </p>
+
+            <p>&bull; We can’t use the Google directions service to do the calculation because the API is
+                not free for this new Android app.
+            </p>
+
+            <p>&bull; Note: Please use the auto-complete feature while entering addresses. The app only recognizes
+                addresses entered via auto-complete.
+                <br>
+                <br>
+
+                The auto-complete feature is provided by Google Maps API. If it does not work properly, there are three
+                possibilities: 1.The Internet connection is currently not good; 2.The Google Maps API service is currently
+                not working properly; 3.The Google Maps API service (not the actual Google Maps app) has some compatibility
+                issues with your device. For any of the above issues, I can not do anything about it, sorry :(
+            </p>
+    ]]></string>
+</resources>

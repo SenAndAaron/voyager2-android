@@ -1,0 +1,60 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp">
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/idHolder"
+            android:visibility="invisible"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reorder_btn"
+            android:src="@drawable/ic_reorder"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/action_drag_reorder"
+            android:background="?android:selectableItemBackground"
+            android:layout_centerVertical="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nickname"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/reorder_btn"
+            android:layout_toEndOf="@+id/reorder_btn"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/delete_btn"
+            android:layout_toLeftOf="@+id/delete_btn"
+            android:layout_toEndOf="@id/nickname"
+            android:layout_toRightOf="@+id/nickname"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_btn"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_trash"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/action_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+</RelativeLayout>

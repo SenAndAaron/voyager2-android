@@ -1,0 +1,77 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_waypoint_view">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_stop"
+            android:id="@+id/add_new_stop_label"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/dialog_item_label"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/dialog_item_label"
+            android:layout_toEndOf="@+id/add_new_stop_label"
+            android:layout_alignTop="@+id/add_new_stop_label"
+            android:layout_toRightOf="@+id/add_new_stop_label"/>
+
+    <AutoCompleteTextView
+            android:id="@+id/waypoint_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="3"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/add_new_stop_label"
+            android:layout_marginTop="@dimen/dialog_item_entry_margin_top"
+            android:textSize="@dimen/dialog_item_entry"
+            android:layout_alignParentLeft="true"
+            android:selectAllOnFocus="true"
+            android:layout_toLeftOf="@+id/waypoint_address_warn_btn"
+            android:layout_toStartOf="@+id/waypoint_address_warn_btn"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/waypoint_address_warn_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/waypoint_address"
+            android:src="@drawable/ic_warning"
+            android:background="?android:selectableItemBackground"
+            android:visibility="gone"
+            android:contentDescription="@string/warning"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nickname"
+            android:id="@+id/nickname_label"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/waypoint_address"
+            android:textSize="@dimen/dialog_item_label"
+            android:layout_marginTop="@dimen/dialog_item_label_margin_top"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nickname"
+            android:layout_marginTop="@dimen/dialog_item_entry_margin_top"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/nickname_label"
+            android:textSize="@dimen/dialog_item_entry"
+            android:hint="@string/hint_optional"/>
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- The ActionBar -->
+    <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/toolbar"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_address"
+            android:id="@+id/start_point_label"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/dialog_item_label"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="@dimen/dialog_item_label_margin_top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#FF0000"
+            android:layout_toRightOf="@+id/start_point_label"
+            android:layout_toEndOf="@+id/start_point_label"
+            android:layout_alignTop="@+id/start_point_label"
+            android:textSize="@dimen/dialog_item_label"/>
+
+    <AutoCompleteTextView
+            android:id="@+id/start_point"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/start_point_label"
+            android:textSize="@dimen/dialog_item_entry"
+            android:layout_marginTop="@dimen/dialog_item_entry_margin_top"
+            android:selectAllOnFocus="true"
+            android:layout_toLeftOf="@+id/start_point_warn_btn"
+            android:layout_toStartOf="@+id/start_point_warn_btn"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_point_warn_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/start_point"
+            android:src="@drawable/ic_warning"
+            android:background="?android:selectableItemBackground"
+            android:visibility="gone"
+            android:contentDescription="@string/warning"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginStart="-8dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_address"
+            android:id="@+id/end_point_label"
+            android:layout_below="@+id/start_point"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/dialog_item_label_margin_top"
+            android:textSize="@dimen/dialog_item_label"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+    <AutoCompleteTextView
+            android:id="@+id/end_point"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="3"
+            android:hint="@string/hint_end_point"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/end_point_label"
+            android:textSize="@dimen/dialog_item_entry"
+            android:layout_marginTop="@dimen/dialog_item_entry_margin_top"
+            android:selectAllOnFocus="true"
+            android:layout_toLeftOf="@+id/end_point_warn_btn"
+            android:layout_toStartOf="@+id/end_point_warn_btn"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_point_warn_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/end_point"
+            android:src="@drawable/ic_warning"
+            android:background="?android:selectableItemBackground"
+            android:visibility="gone"
+            android:contentDescription="@string/warning"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginStart="-8dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/route_name"
+            android:id="@+id/route_name_label"
+            android:textSize="@dimen/dialog_item_label"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/end_point"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/dialog_item_label_margin_top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/route_name"
+            android:hint="@string/hint_optional"
+            android:layout_below="@+id/route_name_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/dialog_item_entry"
+            android:layout_marginTop="@dimen/dialog_item_entry_margin_top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/setup_macroSavebtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="@string/action_save"
+                bootstrap:bb_icon_right="fa-save"
+                bootstrap:bb_roundedCorners="true"
+                bootstrap:bb_size="small"
+                bootstrap:bb_type="success"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/setup_macroCancelbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="@string/action_cancel"
+                bootstrap:bb_icon_right="fa-times-circle"
+                bootstrap:bb_roundedCorners="true"
+                bootstrap:bb_size="small"
+                bootstrap:bb_type="danger"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
