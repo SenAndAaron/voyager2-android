@@ -10,6 +10,6 @@ You may download it through the Play Store, https://play.google.com/store/apps/d
 4. Use defaults
 
 ## Notes
-1. The app is has not been tested for production usage and not intented to be used by serious users (e.g. couriers). If you are looking for a more stable/battle-proof app, please check out the previous version "Voyager: Route Planner" in the Play Store, https://play.google.com/store/apps/details?id=com.sensis.voyager
+1. The app has not been tested for production usage and not intented to be used by serious users (e.g. couriers). If you are looking for a more stable/battle-proof app, please check out the previous version "Voyager: Route Planner" in the Play Store, https://play.google.com/store/apps/details?id=com.sensis.voyager
 2. Optimal route calculation is NOT done based on data from the Google directions service. It simply uses the direct distance between two stops (by the Haversine algorithm) and no traffic condition is taken into account.
 3. ButterKnife is used extensively, and unfortunately that requires proper handling of unbinding. To ease this a little, there are helper base classes in the ioc package.
