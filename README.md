@@ -1,5 +1,5 @@
 # Voyager v2
-It is an android app that calculates the optimal (shortest) route for visiting all entered stop points. That is, it solves the classic "Traveling Salesman Problem (TSP)". It is published in the Play Store, https://play.google.com/store/apps/details?id=com.sensis.voyager.app
+It is an android app that calculates the optimal (shortest) route for visiting all entered stop points. That is, it solves the classic "Traveling Salesman Problem (TSP)". You may download it through the Play Store, https://play.google.com/store/apps/details?id=com.sensis.voyager.app
 
 ## Getting Started
 1. Open IntelliJ or Android Studio
